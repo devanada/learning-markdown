@@ -1,4 +1,4 @@
-# A demo of `React.js`
+# A demo of `HTML`
 
 `react-markdown` is a markdown component for React.
 

@@ -37,27 +37,7 @@ Terkadang, data dilempar dari atas ke bawah (parent to child) melalui props, nam
 
 Dengan kata lain, **Context** seperti sebuah variabel global yang bisa diakses kapanpun dan dimanapun tanpa parsing props di setiap komponen yang kita miliki.
 
-```mermaid
-    flowchart TD;
-
-    A["Provider\n#lt;Context.Provider value='My Value'>\n{...}\n#lt;/Context.Provider>"]
-    B["#lt;Component1/>"]
-    C["#lt;Component2/>"]
-    D["#lt;Component3/>"]
-    E["Consumer\nconst value =\nuseContext(Context)"]
-    F[Context\nvalue = 'My Value' ]
-
-    A---B
-    A---C
-    A-->F
-    C---D
-    C---E
-    E-->F
-
-    style A text-align:left
-    style E text-align:left
-    style F text-align:left
-```
+![React Context](https://res.cloudinary.com/hypeotesa/image/upload/v1665159088/react-context-3_gvcsrj.svg "React Context")
 
 ## Kapan menggunakan Context
 

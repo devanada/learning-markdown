@@ -10,7 +10,7 @@ This section is replaced by an actual table of contents.
 
 Sebelumnya kita memparsing atau melemparkan sebuah data menggunakan props ke beberapa komponen yang kita buat. Namun seiring berjalannya waktu dan perkembangan aplikasi yang telah di develop membuat kita cukup menderita dan exhausted ketika masih melakukan parsing data antar komponen seperti berikut.
 
-```js
+```javascript
 import React from "react";
 
 const App = () => {
@@ -59,13 +59,13 @@ Dengan kata lain, **Context** seperti sebuah variabel global yang bisa diakses k
 
 1. Buat **Context** dengan menggunakan method `createContext` lalu export
 
-```js
+```javascript
 export const MyContext = React.createContext(defaultValue);
 ```
 
 2. Import **Context** yang telah dibuat sebelumnya dan bungkus component tree dengan Context Provider, dan letakkan value apapun yang kita inginkan dengan menggunakan value prop
 
-```js
+```javascript
 {/* ... */}
 
 import { MyContext } from "../your/context/path";
@@ -83,7 +83,7 @@ function App() {
 
 3. Baca value yang telah disimpan kedalam **Context** dengan menggunakan hooks `useContext`
 
-```js
+```javascript
 /* ... */
 
 import { useContext } from "react";
